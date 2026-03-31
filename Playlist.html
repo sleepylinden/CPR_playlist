@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>CPR Playlist</title>
+
+<style>
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.cover {
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.bpm {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    background: #4CAF50;
+    color: white;
+    font-size: 12px;
+}
+
+</style>
+
+<script>
+function playAudio(id) {
+    let all = document.querySelectorAll("audio");
+    all.forEach(a => a.pause());
+
+    let audio = document.getElementById(id);
+    audio.currentTime = 0;
+    audio.play();
+}
+</script>
+
+</head>
+<body>
+
+<h1>🎧 Плейлист для СЛР</h1>
+
+<!-- КЛАССИКА -->
+<div class="section">
+<h2>🎼 Нестареющая классика</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Downloads/Bee%20Gees%20-%20Stayin'%20Alive%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://cdn.руни.рф/images/0/02/Bee_Gees_-_Stayin_Alive.jpg" class="cover">
+</a>
+<p><b>Stayin' Alive</b><br>Bee Gees</p>
+<span class="bpm">103 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/another_one_bites.mp3.mp3" target="_blank">
+    <img src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/180/711/172/561/621/52/600007359379b0.jpeg" class="cover">
+</a>
+<p><b>Another one bites the dust</b><br>Queen</p>
+<span class="bpm">110 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/dancing_queen.mp3" target="_blank">
+    <img src="https://s00.yaplakal.com/pics/pics_preview/0/4/5/12699540.jpg" class="cover">
+</a>
+<p><b>Dancing queen</b><br>ABBA</p>
+<span class="bpm">101 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/billie_jean.mp3" target="_blank">
+    <img src="https://i.etsystatic.com/16390383/r/il/5bb3ff/3355626563/il_570xN.3355626563_l587.jpg" class="cover">
+</a>
+<p><b>Billie Jean</b><br>Michael Jackson</p>
+<span class="bpm">117 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/dreams.mp3" target="_blank">
+    <img src="https://www.bomba-music.ru/images/stories/virtuemart/product/fleetwood-mac-%E2%80%8E–-rumours4.jpg" class="cover">
+</a>
+<p><b>Dreams</b><br>Fleetwood Mac</p>
+<span class="bpm">120 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/eye_of_the_tiger.mp3" target="_blank">
+    <img src="https://lastfm.freetls.fastly.net/i/u/ar0/bd8bb33ea532bf4acba6fc8dcc33d90f.jpg" class="cover">
+</a>
+<p><b>Eye of the tiger</b><br>Survivor</p>
+<span class="bpm">109 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/classic_/i_wanna_dance_with.mp3" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/6/69/WhitneyHouston_IWannaDance.jpg" class="cover">
+</a>
+<p><b>I wanna dance with somebody (who loves me)</b><br>Whitney Houston</p>
+<span class="bpm">119 BPM</span>
+</div>
+
+</div>
+</div>
+
+<!-- РУССКИЕ -->
+<div class="section">
+<h2>🇷🇺 Русские песни</h2>
+
+<div class="grid">
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Miyagi%20Эндшпиль,%20Рем%20Дигга%20-%20I%20Got%20Love%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/%22I_Got_Love%22_by_Miyagi_%26_Endshpil_%28album_cover%29.png/960px-%22I_Got_Love%22_by_Miyagi_%26_Endshpil_%28album_cover%29.png" class="cover">
+</a>
+<p><b>I got love</b><br>MiyaGi & Эндшпиль, Рем Дигга</p>
+<span class="bpm">106 BPM</span>
+</div>
+
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Грибы%20-%20Тает%20лёд%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.yandex.net/get-music-content/5413882/3f446508.a.4198397-2/m1000x1000" class="cover">
+</a>
+<p><b>Тает лёд</b><br>Грибы</p>
+<span class="bpm">120 BPM</span>
+</div>
+
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Моя%20Мишель%20-%20Зима%20в%20сердце%20(hitmo.net).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/28506/603939590/S600xU" class="cover">
+</a>
+<p><b>Зима в сердце</b><br>Моя Мишель</p>
+<span class="bpm">108 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Кино%20-%20Звезда%20по%20имени%20Солнце%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/10349888/1217177081/S600xU" class="cover">
+</a>
+<p><b>Звезда по имени Солнце</b><br>Кино</p>
+<span class="bpm">118 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Bond_s_knopkojj_-_Kukhni_(musmore.org).mp3" target="_blank">
+    <img src="https://avatars.yandex.net/get-music-content/15042045/92369e85.a.35594903-1/m1000x1000" class="cover">
+</a>
+<p><b>Кухни</b><br>Бонд с кнопкой</p>
+<span class="bpm">100 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Tri_dnya_dozhdya_-_Otpuskajj_(musmore.org).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/2331613/560750171/S600xU" class="cover">
+</a>
+<p><b>Отпускай</b><br>Три дня дождя</p>
+<span class="bpm">112 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/russian/Vanya_Dmitrienko_Anya_Peresild_-_Silujet_(musmore.org).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/10349888/1234836226/S600xU" class="cover">
+</a>
+<p><b>Силуэт</b><br>Ваня Дмитриенко и Анна Пересильд</p>
+<span class="bpm">120 BPM</span>
+</div>
+
+</div>
+</div>
+
+<!-- KPOP -->
+<div class="section">
+<h2>K-pop</h2>
+
+<div class="grid">
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/BTS%20-%20Body%20To%20Body%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://images.genius.com/17d98cbd64fd6b74b96ca09e80055df3.1080x1080x1.jpg" class="cover">
+</a>
+<p><b>Body to body</b><br>BTS</p>
+<span class="bpm">120 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/Stray%20Kids%20-%20Case%20143%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://static.wikia.nocookie.net/kpop/images/3/30/Stray_Kids_Maxident_online_album_cover.png/revision/latest?cb=20221008112923&path-prefix=ru" class="cover">
+</a>
+<p><b>Case 143</b><br>Stray kids</p>
+<span class="bpm">100 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/Blackpink%20-%20Whistle%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/i?id=112b1a790cb001f916a0028c8605245d_l-4013935-images-thumbs&n=13" class="cover">
+</a>
+<p><b>Whistle</b><br>BLACKPINK</p>
+<span class="bpm">103 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/Exo%20-%20Tempo%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/5396454/588684353/S600xU" class="cover">
+</a>
+<p><b>Tempo</b><br>EXO</p>
+<span class="bpm">116 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/SHINee%20-%20누난%20너무%20예뻐%20Replay%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/5485905/543581711/S600xU" class="cover">
+</a>
+<p><b>Replay</b><br>SHINee</p>
+<span class="bpm">100 BPM</span>
+</div>
+
+<div class="card">
+<a href="file:///C:/Users/Sonya%20Lipina/Desktop/CPR_playlist/kpop/Txt%20-%20Blue%20Hour%20(hitmos.fm).mp3" target="_blank">
+    <img src="https://avatars.mds.yandex.net/get-entity_search/2417109/468274633/S600xU" class="cover">
+</a>
+<p><b>Blue Hour</b><br>TOMORROW X TOGETHER</p>
+<span class="bpm">112 BPM</span>
+</div>
+
+</div>
+</div>
+
+<!-- ОБЪЯСНЕНИЕ -->
+<div class="section">
+<div class="card">
+<h2>🧠 Почему это может помочь</h2>
+
+<p>
+Музыкальные маркеры помогают человеку адаптироваться к стрессовой среде, 
+снижая когнитивную нагрузку и стабилизируя ритм действий.
+</p>
+
+<p>
+Акустическая среда выступает как экологический фактор, влияющий на поведение. 
+Использование знакомых треков ускоряет реакцию и повышает точность выполнения СЛР.
+</p>
+
+</div>
+</div>
+
+</body>
+</html>
